@@ -15,10 +15,15 @@ function MainContent() {
         timeOfDay = "night"
     }
 
+    const styles = {
+        color: "#FF8C00",
+        backgroundColor: "#FF2D00"
+    }
+
     return (
         <div>
             <h1>It is currently about {date.getHours() % 12} o'clock!</h1>
-            <h1 style={{color: "#FF8C00", }}>Good {timeOfDay}</h1>
+            <h1 style={styles}>Good {timeOfDay}</h1>
             <h1>Hello {firstName + " " + lastName}!</h1>
             <h1>Hello {`${firstName} ${lastName}`}!</h1>
             <input type="checkbox" />
