@@ -25,14 +25,18 @@ function MainContent() {
 
     return (
         <div>
-            <h1>It is currently about {date.getHours() % 12} o'clock!</h1>
-            <h1 style={styles}>Good {timeOfDay}</h1>
-            <h1>Hello {firstName + " " + lastName}!</h1>
-            <h1>Hello {`${firstName} ${lastName}`}!</h1>
-            <TodoItem/>
-            <TodoItem/>
-            <TodoItem/>
-            <TodoItem/>
+            <div>
+                <h1>It is currently about {date.getHours() % 12} o'clock!</h1>
+                <h1 style={styles}>Good {timeOfDay}</h1>
+                <h1>Hello {firstName + " " + lastName}!</h1>
+                <h1>Hello {`${firstName} ${lastName}`}!</h1>
+            </div>
+            <div className="todo-list">
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
+            </div>
         </div>
     )
 }
